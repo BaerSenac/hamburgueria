@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -10,7 +11,7 @@
 
 
 .navbar {
-    background: #0f0f0f;
+    background: #131313;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -33,18 +34,28 @@
 }
 
 #navbar_logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    color: white;
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+}
+
+span {
+    background: linear-gradient(to right, #fe8c00, #f83600);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.burguer {
+    background: linear-gradient(to right, #fe8c00, #f83600);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .navbar_menu {
@@ -86,15 +97,15 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fe8c00, #f83600);
+    
+    background: linear-gradient(to right, #fe8c00, #f83600);
     color: white;
     transition: all 0.3s ease;
 }
 
 .navbar_links:hover {
-    color: #9518fc;
+    color: #d14108;
     transition: all 0.3s ease;
 }
 
@@ -223,20 +234,16 @@
 }
 
 .hero_heading span {
-    background: #ee0979;
-    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
-    background: linear-gradient(to right, #ff6a00, #ee0979);
+    background: linear-gradient(to right, #fe8c00, #f83600); 
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -mo-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 .hero_description {
     font-size: 60px;
-    background: #da22ff;
-    background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
-    background: linear-gradient(to right, #9114ff, #da22ff);
+    background: linear-gradient(to right, #fe8c00, #f83600); 
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -246,7 +253,8 @@
 }
 
 .highlight {
-    border-bottom: 4px solid rgb(132, 0,255);
+    border-bottom: 4px solid rgb(255, 94, 0);
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -286,8 +294,7 @@
 
 .main_content h1 {
     font-size: 2rem;
-    background-color: #fe3b6f;
-    background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+    background: linear-gradient(to right, #fe8c00, #f83600);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -299,7 +306,7 @@
 
 .main_content h2 {
     font-size: 4rem;
-    background: #ff8177;
+    background: #f83600;
     background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
     background: linear-gradient(to right, #8f0eff, #da22ff);
     background-size: 100%;
@@ -311,15 +318,13 @@
 
 .main_content p {
     margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .main_btn {
     font-size: 1.8rem;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fe8c00, #f83600);
     padding: 20px 60px;
     border: none;
     border-radius: 4px;
@@ -334,8 +339,9 @@
 .main_btn a {
     position: relative;
     z-index: 2;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    font-weight: 500;
 }
 
 
@@ -346,7 +352,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #ff087b;
+    background: #f83600;
     transition: all 0.35s;
     border-radius: 4px;
     
@@ -373,8 +379,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    
+    
 }
 
 .fa-layer-group,
@@ -397,17 +403,21 @@
         width: 100%;
         margin: 0 auto;
         height: 90%;
+        
 
     }
+    
 
     .main_img--card {
         height: 425px;
-        width: 425px;
+        width: 330px;
     }
 
+    
     .main_content {
         text-align: center;
         margin-bottom: 4rem;
+        
     }
 
     .main_content h1 {
@@ -421,7 +431,8 @@
 
     .main_content p {
         margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: normal;
     }
 }
 
@@ -430,6 +441,12 @@
     .main_img--card {
         width: 250px;
         height: 250px;
+        
+    }
+    .main_img--card:hover {
+        transform: scale(1.075);
+        transition: 0.3s ease-in;
+        cursor: pointer;
     }
 
     .fa-users, .fa-layer-group {
@@ -473,7 +490,7 @@
 
 .services h1 {
     background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+    background: linear-gradient(to right, #fe8c00, #f83600);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -493,36 +510,35 @@
 
 .services_card {
     margin: 10px;
-    height: 425px;
+    height: 455px;
     width: 300px;
-    border-radius: 4px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background: linear-gradient(to right, #8f0eff, #da22ff);
     transition: 0.3s ease-in;
+
+}
+
+.img1 {
+    height: 440px;
 }
 
 .services_card:nth-child(2) {
-    background: #00C9FF;  
-    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);   
-    background: linear-gradient(to right, #92FE9D, #00C9FF); 
+    background: linear-gradient(to right, #8f0eff, #da22ff);
 
 }
 
 .services_card:nth-child(3) {
-    background: #833ab4;  
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
+    background: linear-gradient(to right, #8f0eff, #da22ff); 
 
 
 }
 
 .services_card:nth-child(4) {
-    background: #ff0084;  
-    background: -webkit-linear-gradient(to right, #33001b, #ff0084);  
-    background: linear-gradient(to right, #33001b, #ff0084); 
+    background: linear-gradient(to right, #8f0eff, #da22ff);
 }
 
 .services_card h2 {
